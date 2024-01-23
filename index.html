@@ -48,8 +48,8 @@
         }
 
         .container {
-            margin-left: 8vw;
-            margin-right: 8vw;
+            padding-left: 8vw;
+            padding-right: 8vw;
         }
     </style>
 </head>
@@ -60,11 +60,11 @@
 
     <!-- header section -->
 
-    <header>
+    <header class="container">
 
         <!-- navbar section -->
 
-        <nav>
+        <nav class="pt-6">
 
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -104,7 +104,40 @@
 
         </nav>
 
+        <!-- banner section -->
 
+        <div class="mt-6">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full h-[80vh]">
+                    <img src="Images/1.png" alt="" class="w-full">
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full h-[80vh]">
+                    <img src="Images/12.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full h-[80vh]">
+                    <img src="Images/13.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full h-[80vh]">
+                    <img src="Images/14.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </header>
 
